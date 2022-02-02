@@ -1,0 +1,184 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<!--<meta http-equiv="content-type" content="text/html; charset=utf-8" />-->
+<title>Medineeds Trading Co.- Hospital Products</title>
+<link href="http://fonts.googleapis.com/css?family=Oswald:400,300" rel="stylesheet" type="text/css" />
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+
+<script type="text/javascript" language="javascript"> 
+
+function echeck(str) {
+
+		var at="@"
+		var dot="."
+		var lat=str.indexOf(at)
+		var lstr=str.length
+		var ldot=str.indexOf(dot)
+		if (str.indexOf(at)==-1){
+		   alert("Invalid E-mail ID")
+		   return false
+		}
+
+		if (str.indexOf(at)==-1 || str.indexOf(at)==0 || str.indexOf(at)==lstr){
+		   alert("Invalid E-mail ID")
+		   return false
+		}
+
+		if (str.indexOf(dot)==-1 || str.indexOf(dot)==0 || str.indexOf(dot)==lstr){
+		    alert("Invalid E-mail ID")
+		    return false
+		}
+
+		 if (str.indexOf(at,(lat+1))!=-1){
+		    alert("Invalid E-mail ID")
+		    return false
+		 }
+
+		 if (str.substring(lat-1,lat)==dot || str.substring(lat+1,lat+2)==dot){
+		    alert("Invalid E-mail ID")
+		    return false
+		 }
+
+		 if (str.indexOf(dot,(lat+2))==-1){
+		    alert("Invalid E-mail ID")
+		    return false
+		 }
+		
+		 if (str.indexOf(" ")!=-1){
+		    alert("Invalid E-mail ID")
+		    return false
+		 }
+
+ 		 return true					
+	}
+
+
+
+function validateMyForm ( ) { 
+    var isValid = true;
+    if ( document.form1.Name.value == "" ) { 
+    alert ( "Please type your Name" ); 
+    isValid = false;
+    } else if ( document.form1.Name.value.length < 8 ) { 
+            alert ( "Your name must be at least 8 characters long" ); 
+            isValid = false;
+    } else if ( document.form1.Company.value == "" ) { 
+            alert ( "Please type your Company" ); 
+            isValid = false;
+    } else if ( document.form1.Phone.value == "" ) { 
+            alert ( "Please type your Phone Number" ); 
+            isValid = false;
+    } else if ( document.form1.Email.value == "" ) { 
+            alert ( "Please type your Email Address" ); 
+	   isValid = false;
+    }else if ( echeck(document.form1.Email.value)==false) {
+	    isValid = false;
+   }
+    return isValid;
+}
+</script>
+
+</head>
+
+<body>
+
+<div id="wrapper1">
+	<div id="menu-wrapper">
+		<div id="menu" class="container">
+			<ul>
+				<li ><a href="index.html">Homepage</a></li>
+				<li><a href="services.html">Services</a></li>
+				<li><a href="products.html">Products</a></li>
+				<li class="current_page_item"><a href="contact.html">Contact Us</a></li>
+				<img src="images/logo.png" vspace="13px"; align = "right"; alt="" />
+			</ul>
+		</div>
+	</div>
+</div>
+	
+<div id="white_background">
+<div id="page" class="container">
+<div id="content">
+				<h3><a>Our Address</a></h3>
+				<div class="entry">
+					<p><strong>Medineeds Trading Co.</strong></p>
+					<p>New Siyaganj, <br>Indore (M.P.)<br>Contact Person: Mr. Qaid Johar </p>
+				<p><iframe width="400" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.in/maps?hl=en&amp;ie=UTF8&amp;ll=22.723683,75.866282&amp;spn=0.002776,0.005284&amp;t=h&amp;z=18&amp;output=embed"></iframe><br /><small><a href="https://maps.google.co.in/maps?hl=en&amp;ie=UTF8&amp;ll=22.723683,75.866282&amp;spn=0.002776,0.005284&amp;t=h&amp;z=18&amp;source=embed" style="color:#0000FF;text-align:left">View Larger Map</a></small></p>
+			</div>
+		</div>
+	<div id="sidebar2">
+		
+           		<form name="form1" action="contact-form-processing.php" method="POST" enctype="multipart/form-data">
+			Name:<br /><input name="Name" id="Name" type="text"><br />
+			Company:<br /><input name="Company" id="Company" type="text"><br />
+			Phone:<br /><input name="Phone" id="Phone" type="text"><br />
+			Email:<br /><input name="Email" id="Email" type="text"><br />
+			Message:<br /><textarea name="Message" type="text" rows="10" cols="35"></textarea><br /><br />
+			<input name="button" type="submit" value="Send" onclick="javascript:return validateMyForm();"/>
+			<input name="button" type="reset" value="Reset"  />
+			</form>
+	</div>
+
+</div><!-- end #page -->
+
+	<div id="four-column" class="container">
+<!--
+		<div id="tbox1">
+			<div class="box-style">
+				<div class="image"></div>
+				<div class="arrow"></div>
+				<div class="content">
+					<h2>Fusce ultrices fringilla</h2>
+					<p>Aliquam erat volutpat. Quisque dictum. Integer nisl risus, sagittis convallis elementum congue, nibh. </p>
+				</div>
+			</div>
+		</div>
+		<div id="tbox2">
+			<div class="box-style">
+				<div class="image"></div>
+				<div class="arrow"></div>
+				<div class="content">
+					<h2>Mauris vulputate dolor</h2>
+					<p>Pellentesque tristique ante ut risus. Quisque dictum. Integer nisl risus, sagittis convallis,   congue, nibh. </p>
+				</div>
+			</div>
+		</div>
+		<div id="tbox3">
+			<div class="box-style">
+				<div class="image"></div>
+				<div class="arrow"></div>
+				<div class="content">
+					<h2>Nulla luctus eleifend </h2>
+					<p>Pellentesque tristique ante ut risus. Quisque dictum. Integer nisl risus, sagittis  elementum congue, nibh.</p>
+				</div>
+			</div>
+		</div>
+		<div id="tbox4">
+			<div class="box-style">
+				<div class="image"></div>
+				<div class="arrow"></div>
+				<div class="content">
+					<h2>Nulla luctus eleifend </h2>
+					<p>Pellentesque tristique ante ut risus. Quisque dictum. Integer nisl risus, sagittis  elementum congue, nibh.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+-->
+</div>
+</div><!-- end #white_background -->
+<div id="footer-content" class="container">
+	<div id="footer-bg">
+		<div id="column4">
+			<p>Copyright(c)2013  Medineeds Trading Co. All rights reserved. |  Designed by <a href="https://zainabmalak.netlify.app">Zainab Malak</a> </p>
+		</div>
+		
+	</div>
+</div>
+<!-- end #footer -->
+</body>
+</html>
