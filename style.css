@@ -3,12 +3,17 @@ body {
 	width:100%;
 	margin: 0;
 	padding: 0;
-	overflow: hidden;
 	background: #0048B3 url(images/images001.jpg) repeat;
 	font-family: Tahoma, Geneva, sans-serif;
 	font-size: 13px;
 	color: #626262;
 }
+
+@media only screen and (max-width: 600px) {
+	body {
+		background: url(images/images001.jpg) no-repeat;
+	}
+  }
 
 h1, h2, h3 {
 	margin: 0;
