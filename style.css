@@ -3,7 +3,7 @@ body {
 	width:100%;
 	margin: 0;
 	padding: 0;
-	background: #0048B3 url(images/images001.jpg);
+	background: url(images/images001.jpg);
 	font-family: Tahoma, Geneva, sans-serif;
 	font-size: 13px;
 	color: #626262;
