@@ -3,7 +3,8 @@ body {
 	width:100%;
 	margin: 0;
 	padding: 0;
-	background: url(images/images001.jpg);
+	overflow: hidden;
+	background: #0048B3 url(images/images001.jpg) repeat;
 	font-family: Tahoma, Geneva, sans-serif;
 	font-size: 13px;
 	color: #626262;
@@ -54,12 +55,12 @@ a:hover {
 } */
 
 #wrapper {
-	/* overflow: hidden; */
+	overflow: hidden;
 	background: #FFFFFF url(images/images0002.jpg) repeat-x left top;
 }
 
 #wrapper1{
-	/* overflow: hidden; */
+	overflow: hidden;
 	background: #FFFFFF url(images/images03.jpg) repeat-x left top;
 }
 
