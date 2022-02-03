@@ -1,10 +1,6 @@
 
-/*
-Design by WebDesign52
-http://www.webdesign52.corm
-*/
-
 body {
+	width:100%;
 	margin: 0;
 	padding: 0;
 	background: #0048B3 url(images/images001.jpg) repeat;
@@ -43,9 +39,9 @@ p, ul, ol {
 	line-height: 180%;
 }
 
-
+/* 
 ul, ol {
-}
+} */
 
 a {
 	text-decoration: none;
@@ -53,9 +49,9 @@ a {
 
 
 }
-
+/* 
 a:hover {
-}
+} */
 
 #wrapper {
 	overflow: hidden;
@@ -180,7 +176,7 @@ a:hover {
 
 
 #menu ul {
-	margin: 0
+	margin: 0;
 	padding: 0px 0px 0px 0px;
 	list-style: none;
 	line-height: normal;
@@ -212,10 +208,10 @@ a:hover {
 	text-decoration: none;
 	color: #FFFFFF;
 }
-
+/* 
 #menu .current_page_item a {
 }
-
+ */
 
 
 
@@ -266,9 +262,9 @@ a:hover {
 	text-decoration: none;
 	color: #FFFFFF;
 }
-
+/* 
 #menu1 .current_page_item a {
-}
+} */
 
 
 
@@ -329,7 +325,7 @@ a:hover {
 	left:50px;
 	top:120px;
 	width:400px;
-	margin 0px;
+	margin: 0px;
 	float: left;
 }
 
