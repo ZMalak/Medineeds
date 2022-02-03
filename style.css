@@ -55,7 +55,8 @@ a:hover {
 } */
 
 #wrapper {
-	overflow: hidden;
+	width:100%;
+	/* overflow: hidden; */
 	background: #FFFFFF url(images/images0002.jpg) repeat-x left top;
 }
 
